@@ -1,0 +1,662 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <title>
+    Soft UI Dashboard 3 by Creative Tim
+  </title>
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700,800" rel="stylesheet" />
+  <!-- Nucleo Icons -->
+  <link href="https://demos.creative-tim.com/soft-ui-dashboard/assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="https://demos.creative-tim.com/soft-ui-dashboard/assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <!-- CSS Files -->
+  <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.1.0" rel="stylesheet" />
+  <!-- Nepcha Analytics (nepcha.com) -->
+  <!-- Nepcha is a easy-to-use web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. -->
+  <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body{
+	 font-family: "Montserrat", serif;
+	 padding: 0;
+	 margin: 0;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+
+
+/*==== header sec start =====*/
+.navbar-brand img {
+    max-width: 180px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #3e3d3d;
+    font-weight: 600;
+    font-size: 14px;
+    position: relative;
+}
+.navbar-light .navbar-nav .nav-link::after{
+	content: "";
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 50%;
+	width: 1px;
+	background:#3e3d3d;
+	right: 0;
+}
+.navbar-light .navbar-nav .nav-item:last-child .nav-link::after{
+	opacity: 0;
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgb(0 136 170);
+}
+#navbarSupportedContent {
+    justify-content: end;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.header-sec{
+    background-color: #fff;
+}
+/*==== header sec end =====*/
+
+
+/*===== profile sec ====*/
+.dashbord-sec{
+	padding: 30px 0;
+}
+.dashbord-area {
+    padding: 20px;
+    background: #ff9d02ba;
+    border-radius: 25px;
+    padding-top: 60px;
+}
+.dash-content {
+    background: #fff;
+    position: relative;
+    padding: 10px;
+    border-radius: 25px;
+    padding-top: 50px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.profile-img img{
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+}
+.profile-name {
+    text-align: center;
+}
+.profile-name h4 {
+    color: #f00;
+}
+.profile-details ul {
+    list-style: none;
+    padding: 0;
+    padding-left: 10px;
+    margin: 0;
+    margin-top: 20px;
+}
+.profile-details ul li {
+    font-size: 12px;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+}
+.profile-details ul li strong {
+    margin-right: 5px;
+}
+.profile-btn-area a {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #ffb846;
+    color: #000;
+    text-decoration: none;
+    border-radius: 44px;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+}
+.profile-btn-area {
+	display: flex;
+	flex-flow: wrap;
+	gap: 15px;
+	justify-content: center;
+	margin-top: 10px;
+}
+/*===== profile sec ====*/
+
+
+/*====== notification area =====*/
+.notification-area {
+    background: #0088aa;
+    padding: 20px;
+    border-radius: 25px;
+}
+.noti-heading {
+    background: #fff;
+    padding: 10px;
+    line-height: 1;
+    border-radius: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.noti-heading h5 {
+    margin: 0;
+}
+.noti-list {
+    background: #ffffff;
+    height: 520px;
+    overflow: auto;
+    border-radius: 25px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 40px;
+}
+.noti-list li span{
+	color: #3e3d3d;
+}
+.noti-list li a {
+    display: block;
+    color: #0088aa;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    margin-top: 6px;
+}
+/*====== notification area =====*/
+
+/*===== lms area =====*/
+.lms-area {
+    background: #0088aa;
+    padding: 20px;
+    border-radius: 25px;
+    margin-bottom: 30px;
+}
+.lms-list {
+    background: #fff;
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+.lms-list li a{
+	text-decoration: none;
+}
+.lms-list li a span{
+	color: #fff;
+	background: #000;
+	text-decoration: none;
+	font-size: 14px;
+	text-decoration: none;
+	display: block;
+	width: 100%;
+}
+/*===== lms area =====*/
+
+/*===== payment area =====*/
+.payment-area{
+	background: #0088aa;
+    padding: 20px;
+    border-radius: 25px;
+}
+.ads-area{
+	margin: 30px 0;
+}
+.pay-ads-area {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 500px;
+}
+.pay-ads-area img{
+    height: 100%;
+    object-fit: cover;
+}
+/*===== payment area =====*/
+
+
+
+/* ===== main dashbord ====== */
+.main-dashbord .container{
+    max-width: 98%;
+}
+.main-dashbord .col-lg-3{
+    padding-right: 0;
+}
+.left-bar{
+    background-color:#0088aa;
+    height: 100%;
+}
+
+
+/* footer sec start */
+footer {
+    background: #000000;
+    padding: 90px 0 40px;
+    position: relative;
+    z-index: 1;
+}
+.footer-logo img {
+    max-width: 200px;
+}
+/* footer .container {
+    max-width: 85%;
+} */
+.footer-wiget h1 {
+    font-size: 44px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.footer-wiget h4 {
+    font-size: 17px;
+    color: #fff;
+    font-weight: normal;
+    line-height: 1;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.footer-logo {
+    margin-bottom: 30px;
+}
+.footer-list li a span {
+    margin-right: 10px;
+}
+/* .footer-list li a span img{
+    filter: invert(1);
+} */
+.address-list{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+.address-list li{
+    color:#fff;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.address-list li a{
+    color:#fff;
+    font-size: 14px;
+    text-decoration: none;
+}
+.ct-address{
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 20px; 
+}
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 40px;
+    list-style: none;
+    padding: 0;
+}
+.footer-list li a {
+    color: #fff;
+    font-size: 14px;
+    line-height: 30px;
+    text-decoration: none;
+    font-weight: 400;
+}
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 17px;
+}
+.social-links li a {
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 35px;
+    text-align: center;
+    color: #000;
+    font-size: 13px;
+}
+.left-ft-p {
+    font-size: 14px;
+    margin-top: 40px;
+}
+.md-ft-p {
+    font-size: 14px;
+    margin-top: 40px;
+    text-align: center;
+}
+.end-ft-p {
+    font-size: 14px;
+    margin-top: 40px;
+    text-align: right;
+    color: #ffff;
+}
+.left-ft-p a{
+    color: #fff;
+    text-decoration: none;
+}
+.md-ft-p a{
+    color: #fff;
+    text-decoration: none;
+}
+.end-ft-p a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.login-sign-btn {
+    position: fixed;
+    z-index: 9999;
+    background-color: #62626299;
+    padding: 3px 3px;
+    display: flex;
+    gap: 5px;
+    border-top-left-radius: 44px;
+    border-bottom-left-radius: 44px;
+    overflow: hidden;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -135px;
+    transition: all 0.3s;
+}
+.login-sign-btn:hover{
+    right: -5px;
+    transition: all 0.3s;
+}
+.login-sign-btn a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: capitalize;
+    background: #000;
+    padding: 10px 25px 10px 10px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    border-top-left-radius: 44px;
+    border-bottom-left-radius: 44px;
+}
+.login-sign-btn a span {
+    background: #fff;
+    color: #000;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.footer-wiget p {
+    color: #fff;
+    font-size: 14px;
+    width: 70%;
+}
+/* footer sec end */
+  </style>
+</head>
+
+<body class="g-sidenav-show  bg-gray-100">
+    <header class="header-sec">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <nav class="navbar navbar-expand-lg navbar-light" style="box-shadow: none;">
+        <a class="navbar-brand" href="#"><img src="images/logo.png" class="img-fluid" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav  mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Certificates</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Settings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Log Out</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+    
+    
+      <section class="banner-sec">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/banner.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/banner.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/banner.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+      </section>
+    
+    
+      <section class="dashbord-sec">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-9">
+              <div class="row">
+                <div class="col-lg-5">
+                  <div class="dashbord-area">
+                    <div class="dash-content">
+                      <div class="profile-img">
+                        <img src="images/client.png" alt="">
+                      </div>
+                      <div class="profile-name">
+                        <h4>DEBALAY ACHARJEE</h4>
+                        <h6>Learner ID : 2413010243</h6>
+                      </div>
+                      <div class="profile-details">
+                        <ul>
+                          <li><strong> Email ID :</strong>debalayacharjeemarketing@gmail.com</li>
+                          <li><strong>Contact No :</strong> +91-9366193270</li>
+                          <li><strong>Father Name :</strong>Debdas Acharjee</li>
+                          <li><strong>Mother Name :</strong>Mother Name</li>
+                          <li><strong>D.O.B. :</strong>26/03/2000</li>
+                          <li><strong>Program :</strong>Bachelor of Business Administration (OL)</li>
+                          <li><strong>Semester :</strong>1</li>
+                        </ul>
+                      </div>
+                      <div class="profile-btn-area">
+                        <a href="#">Transactions History</a>
+                        <a href="#">Examination</a>
+                        <a href="#" style="background: #00A65A; color: #fff;">Refer & Earn</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-7">
+                  <div class="notification-area">
+                    <div class="noti-heading">
+                      <h5>Notification</h5>
+                    </div>
+                    <ul class="noti-list">
+                      <li><span>19/11/2024</span>
+                        <a href="#">Notification for Assignment Submission - Guidelines & Last Date for all Learners | Academic Session: October 2024</a>
+                      </li>
+                      <li><span>19/11/2024</span>
+                        <a href="#">Notification for Assignment Submission - Guidelines & Last Date for all Learners | Academic Session: October 2024</a>
+                      </li>
+                      <li><span>19/11/2024</span>
+                        <a href="#">Notification for Assignment Submission - Guidelines & Last Date for all Learners | Academic Session: October 2024</a>
+                      </li>
+                      <li><span>19/11/2024</span>
+                        <a href="#">Notification for Assignment Submission - Guidelines & Last Date for all Learners | Academic Session: October 2024</a>
+                      </li>
+                      <li><span>19/11/2024</span>
+                        <a href="#">Notification for Assignment Submission - Guidelines & Last Date for all Learners | Academic Session: October 2024</a>
+                      </li>
+                      <li><span>19/11/2024</span>
+                        <a href="#">Notification for Assignment Submission - Guidelines & Last Date for all Learners | Academic Session: October 2024</a>
+                      </li>
+                      <li><span>19/11/2024</span>
+                        <a href="#">Notification for Assignment Submission - Guidelines & Last Date for all Learners | Academic Session: October 2024</a>
+                      </li>
+                      <li><span>19/11/2024</span>
+                        <a href="#">Notification for Assignment Submission - Guidelines & Last Date for all Learners | Academic Session: October 2024</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="ads-area">
+                    <img src="images/banner.png" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="lms-area">
+                <div class="noti-heading">
+                  <h5>LMS</h5>
+                </div>
+                <ul class="lms-list">
+                  <li><a href="#">
+                    <img src="https://ulm.onlineuu.in/logo/knimbusLogo.png" alt="" class="img-fluid">
+                    <span> Click here to access Library</span>
+                  </a>
+                  </li>
+                  <li><a href="#">
+                    <img src="https://ulm.onlineuu.in/logo/LMS.png" alt="" class="img-fluid">
+                    <span> Click here to access Library</span>
+                  </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="payment-area">
+                <div class="noti-heading">
+                  <h5>Payment</h5>
+                </div>
+              </div>
+              <div class="pay-ads-area">
+                <img src="images/banner.png" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+    
+      <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="footer-wiget">
+                            <div class="footer-logo"><img src="images/logo.png" class="img-fluid"></div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. </p>
+                          </div>
+                    </div>
+                    <div class="col-6 col-lg-2">
+                        <div class="footer-wiget">
+                            <h4 class="text">Usefull Links</h4>
+                        
+                                <ul class="footer-list">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="checkout.html">Check Out</a></li>
+                                <li><a href="">Services</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2">
+                        <div class="footer-wiget">
+                            <h4 class="text">Follow us</h4>
+                            <ul class="footer-list">
+                                <li><a href=""> Safari</a></li>
+                                <li><a href="">Our Boats</a></li>
+                                <li><a href="">Our Resort</a></li>
+                                <li><a href="">Location</a></li>
+                                <li><a href="">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="footer-wiget">
+                            <h4 class="text">Contact Us</h4>
+                            <ul class="footer-list">
+                                <!-- <li><a href=""><span><img src="images/phone_03.png" class="img-fluid"></span>(07) 5486 2285</a></li> -->
+                                <li><a href=""><span><img src="images/phone_03.png" class="img-fluid"></span>0409967836</a></li>
+                                <li><a href=""><span><img src="images/email_03.png" class="img-fluid"></span>info@Example.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-7 col-lg-6"><p class="left-ft-p"><a href="">©Career Crafter 2024. All right reserved.</a> </p></div>
+                    
+                    <div class="col-sm-5 col-lg-6"><p class="end-ft-p text">Crafted By <a href="">Tuhin Designs</a></p></div>
+                </div>
+            </div>
+        </footer>
+    
+  <!-- Github buttons -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="../assets/js/soft-ui-dashboard.min.js?v=1.1.0"></script>
+</body>
+
+</html>
